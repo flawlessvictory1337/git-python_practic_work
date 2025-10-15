@@ -67,12 +67,12 @@ class NumberGuessingGame:
             
             # Проверка на повторение
             if guess in self.used_numbers:
-                return 'ERROR', "⚠️ Вы уже вводили это число! Попробуйте другое."
+                return 'ERROR', "Вы уже вводили это число! Попробуйте другое."
             
             return 'SUCCESS', guess
             
         except ValueError:
-            return 'ERROR', "❌ Пожалуйста, введите целое число!"
+            return 'ERROR', " Пожалуйста, введите целое число!"
     
     def get_user_guess(self):
         """Получить и проверить ввод пользователя"""
